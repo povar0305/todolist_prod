@@ -26,7 +26,7 @@
           </svg>
         </div>
         <div class=" p-0 search_input">
-          <input @input="searching" v-model="searchQ" type="text" placeholder="Поиск Имени, статуса или даты">
+          <input class="pl-1" @input="searching" v-model="searchQ" type="text" placeholder="Поиск Имени, статуса или даты">
         </div>
         <div class="col-auto search_sort ">
           <select-sort @sortby="sorting"></select-sort>
