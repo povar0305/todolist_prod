@@ -336,7 +336,7 @@ input {
 
 
   &_sort {
-    max-width: 100px;
+    min-width: 200px;
     width: 100%;
 
     & > * {
@@ -347,12 +347,14 @@ input {
 
   &_input {
     flex: 1;
+
     @media(max-width: 625px){
-      width: calc(100% - 50px) !important;
+      width: calc(100% - 60px) !important;
       flex: auto;
     }
 
     & input {
+      padding-left: 10px!important;
       width: 100%;
     }
   }
