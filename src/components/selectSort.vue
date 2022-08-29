@@ -49,5 +49,9 @@ export default {
 }
 .v-input{
   max-width: 120px!important;
+  width: 100%;
+}
+#app > div:nth-child(2) > div > div.col-auto.search_sort{
+  min-width: 200px;
 }
 </style>

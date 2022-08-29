@@ -26,7 +26,7 @@
           </svg>
         </div>
         <div class=" p-0 search_input">
-          <input class="pl-1" @input="searching" v-model="searchQ" type="text" placeholder="Поиск Имени, статуса или даты">
+          <input style="padding-left: 10px!important" @input="searching" v-model="searchQ" type="text" placeholder="Поиск Имени, статуса или даты">
         </div>
         <div class="col-auto search_sort ">
           <select-sort @sortby="sorting"></select-sort>
@@ -326,7 +326,9 @@ input {
   border: 1px solid transparent;
   outline: none !important;
 }
-
+#app > div:nth-child(2) > div > div.col-auto.search_sort{
+  min-width: 200px;
+}
 .search {
   &_icon {
     width: 18px;
@@ -336,7 +338,7 @@ input {
 
 
   &_sort {
-    min-width: 200px;
+
     width: 100%;
 
     & > * {
