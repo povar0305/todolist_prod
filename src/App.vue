@@ -192,8 +192,8 @@ $hover_light_blue: #b0ceff;
     padding: 0;
     margin: 0;
   }
-  & .row_title{
-    @media(max-width: 625px){
+  & .row_title,& .row_title+.row {
+    @media(max-width: 1440px){
       padding-left: 10px!important;
       padding-right: 10px!important;
     }
@@ -333,6 +333,7 @@ input {
     max-width: 18px;
     padding-right: 10px;
   }
+
 
   &_sort {
     max-width: 100px;
